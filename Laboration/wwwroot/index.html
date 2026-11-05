@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js" defer>      </script>
+    </head>
+<body>
+    <main class="page">
+        <header>
+            <h1>Task Tracker</h1>
+            <p class="intro">
+                Manage your tasks and practice automated testing.
+                </p>
+        </header>
+
+        <section>
+            <form id="task-form">
+                <label for="task-title">Task title
+                </label>
+
+                <div class="form-row">
+                    <input
+                        id="task-title"
+                        name="title"
+                        type="text"
+                        placeholder="Enter a task..."
+                        autocomplete="off"
+                    >
+                    <button type="submit">Add task</button>
+                </div>
+
+                <p id="message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section aria-labelledby="task-list-heading">
+            <h2 id="task-list-heading">Your tasks</h2>
+            <ul id="task-list"></ul>
+        </section>
+
+        <footer>
+            <p>@ Copyright 2026 Kalle Anka AB</p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Ignorera byggfiler från C#
+/*/bin/
+/*/obj/
+
+# Editorer
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
