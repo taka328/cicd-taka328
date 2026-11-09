@@ -8,3 +8,5 @@
 .idea/
 *.user
 *.suo
+
+node_modules/
