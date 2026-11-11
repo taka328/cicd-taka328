@@ -23,7 +23,7 @@ namespace Laboration
 
         public TaskItem Create(string? title)
         {
-            if (title is null)
+            if (string.IsNullOrWhiteSpace(title))
             {
                 throw new ArgumentException("Title is required.", nameof(title));
             }
