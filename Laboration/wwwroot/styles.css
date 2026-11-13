@@ -14,7 +14,7 @@ body {
   width: min(42rem, calc(100% - 2rem));
   margin: 3rem auto;
   padding: 2rem;
-  background: #ffffff;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
 }
@@ -23,6 +23,7 @@ h1,
 h2 {
   line-height: 1.2;
 }
+
 .intro {
   color: #586273;
 }
@@ -52,7 +53,7 @@ button {
   border: 0;
   border-radius: 6px;
   background: #155eef;
-  color: #ffffff;
+  color: #fff;
   font: inherit;
   cursor: pointer;
 }
@@ -75,6 +76,7 @@ button:disabled {
 #task-list {
   padding-left: 1.5rem;
 }
+
 #task-list li {
   margin: 0.75rem 0;
 }
@@ -97,7 +99,7 @@ footer {
   font-size: 0.875rem;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .page {
     margin: 1rem auto;
     padding: 1.25rem;

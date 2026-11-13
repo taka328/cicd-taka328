@@ -4,7 +4,10 @@
   "description": "Skapa tester för C# och Javascript och implementera CI/CD-flöde enligt instruktionerna på Learnpoint!",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"Laboration/wwwroot/*.css\"",
+    "lint:html": "htmlhint \"Laboration/wwwroot/*.html\""
   },
   "repository": {
     "type": "git",
@@ -20,8 +23,13 @@
   "homepage": "https://github.com/EduEdugrade/net24-ci-cd-taka328#readme",
   "devDependencies": {
     "@babel/preset-env": "^8.0.7",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "htmlhint": "^1.9.2",
     "jest": "^30.5.2",
     "jest-environment-jsdom": "^30.5.2",
-    "prettier": "^3.9.10"
+    "prettier": "^3.9.10",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }
