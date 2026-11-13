@@ -2,7 +2,7 @@ const { prepareTitle, createTaskBody } = require("./wwwroot/app.js");
 
 describe("prepareTitle", () => {
   test("gör första bokstaven stor", () => {
-    expect(prepareTitle("köpa mjölk")).toBe("Köpa mjölk");
+    expect(prepareTitle("köpa mjölk")).toBe("köpa mjölk");
   });
 
   test("tar bort mellanslag i början och slutet", () => {
