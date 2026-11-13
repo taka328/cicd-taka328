@@ -9,9 +9,9 @@ async function loadTasks() {
 
   taskList.replaceChildren();
 
-  tasks.forEach((task) => {
-    const listItem = document.createElement("li");
-    const title = document.createElement("span");
+    tasks.forEach((task) => {
+      const listItem = document.createElement("li");
+      const title = document.createElement("span");
 
     title.textContent = task.title;
 
