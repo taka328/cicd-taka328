@@ -76,8 +76,8 @@ public class TaskServiceTests
     [Fact]
     public void Create_ThrowsWhenTitleIsWhitespace()
     {
-        
-        var service = new TaskService(); 
+
+        var service = new TaskService();
 
         Assert.Throws<ArgumentException>(() => service.Create(" "));
     }
@@ -86,7 +86,7 @@ public class TaskServiceTests
     public void Complete_MarkTaskAsCompleted()
     {
         var service = new TaskService();
- 
+
         var result = service.Complete(1);
 
         Assert.True(result);
