@@ -2,7 +2,7 @@ const form = document.querySelector("#task-form");
 const titleInput = document.querySelector("#task-title");
 const taskList = document.querySelector("#task-list");
 const message = document.querySelector("#message");
-const errormessage = "debug me mOAHA"
+const errormessage = "debug me mOAHA";
 
 async function loadTasks() {
   const response = await fetch("/api/tasks");
