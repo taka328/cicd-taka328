@@ -11,7 +11,7 @@ public class TaskServiceTests
 
         var tasks = service.GetAll();
 
-        Assert.Equal(3, tasks.Count);
+        Assert.Equal(4, tasks.Count);
     }
 
     [Fact]
