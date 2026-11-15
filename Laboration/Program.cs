@@ -1,7 +1,7 @@
 using Laboration;
 
 var builder = WebApplication.CreateBuilder(args);
-
+int errornumber = 99;
 builder.Services.AddSingleton<TaskService>();
 
 var app = builder.Build();
